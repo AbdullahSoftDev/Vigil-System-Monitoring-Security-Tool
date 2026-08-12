@@ -753,4 +753,6 @@ Interested in:
 
 ⭐ If you find this project useful, consider giving the repository a star.
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=8b0000&height=110&section=footer&animation=twinkling" width="100%" alt="Animated VIGIL footer">
+
 </div>
