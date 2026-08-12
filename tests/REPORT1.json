@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-02-20T23:47:47.105790",
+  "system": {
+    "metrics": {
+      "cpu_percent": 68.4,
+      "memory_percent": 54.3,
+      "disk_percent": 86.2,
+      "network_sent_kbps": 0.0,
+      "network_recv_kbps": 0.0,
+      "uptime": "1:08:02",
+      "process_count": 383,
+      "load_avg": "3.65, 3.28, 3.11",
+      "cpu": {
+        "percent": 68.4,
+        "cores": [
+          60.0,
+          90.0
+        ],
+        "frequency": {
+          "current": 2304.006,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "memory": {
+        "total": 12087078912,
+        "available": 5520723968,
+        "percent": 54.3,
+        "used_gb": 6.1094818115234375
+      },
+      "disk": {
+        "read_bytes_sec": 0.0,
+        "write_bytes_sec": 29217251.162140753,
+        "read_count": 0,
+        "write_count": 3255
+      },
+      "network": {
+        "bytes_sent_sec": 0.0,
+        "bytes_recv_sec": 0.0,
+        "packets_sent": 0,
+        "packets_recv": 0
+      },
+      "system": {
+        "hostname": "Muhammads-Ubunut",
+        "os": "Linux 6.17.0-8-generic",
+        "kernel": "#8-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov 14 21:44:46 UTC 2025",
+        "uptime": 4082
+      },
+      "timestamp": "2026-02-20 23:47:47.313491"
+    },
+    "process_count": 383
+  },
+  "security": {
+    "total_events": 975464,
+    "events_by_type": {
+      "file_modification": 648421,
+      "file_creation": 163511,
+      "file_deletion": 163238,
+      "suspicious_process": 277,
+      "auth_success": 18
+    },
+    "events_by_severity": {
+      "medium": 811664,
+      "low": 163512,
+      "high": 277,
+      "info": 18
+    },
+    "recent_activity": [
+      {
+        "event_type": "auth_success",
+        "severity": "info",
+        "count": 4
+      },
+      {
+        "event_type": "file_creation",
+        "severity": "low",
+        "count": 163513
+      },
+      {
+        "event_type": "file_deletion",
+        "severity": "medium",
+        "count": 163240
+      },
+      {
+        "event_type": "file_modification",
+        "severity": "medium",
+        "count": 648433
+      },
+      {
+        "event_type": "suspicious_process",
+        "severity": "high",
+        "count": 95
+      }
+    ],
+    "top_users": [
+      {
+        "user": "abdullahzzzx7",
+        "count": 155
+      },
+      {
+        "user": "root",
+        "count": 122
+      },
+      {
+        "user": "root(uid=0)",
+        "count": 18
+      }
+    ],
+    "top_source_ips": []
+  },
+  "alerts": {
+    "count": 100,
+    "unacknowledged": 100
+  }
+}
