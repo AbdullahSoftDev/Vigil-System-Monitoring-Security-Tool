@@ -1,0 +1,83 @@
+# VIGIL Default Configuration
+# This file is copied to config.yaml on first run
+
+# Monitoring Settings
+monitoring:
+  interval: 2  # seconds between system metric updates
+  history_size: 300  # number of readings to store (10 minutes at 2s intervals)
+  process_update_interval: 5  # seconds between process list updates
+  disk_check_interval: 60  # seconds between disk usage checks
+
+# Security Monitoring
+security:
+  sensitive_paths:
+    - /etc
+    - /home
+    - /var/log
+    - /root
+  log_files:
+    - /var/log/auth.log
+    - /var/log/syslog
+    - /var/log/secure
+  scan_interval: 60  # seconds between security scans
+  file_event_timeout: 30  # seconds to wait before processing file events
+
+# Privacy Settings
+privacy:
+  level: metrics_only  # options: full_privacy, metrics_only, alerts_only, full_sync
+  encryption_enabled: true
+  anonymize_hostname: false
+  encrypt_sensitive_paths: true
+  encrypt_usernames: true
+
+# Alert Thresholds
+alerts:
+  cpu_threshold: 80  # percentage
+  memory_threshold: 90  # percentage
+  disk_threshold: 95  # percentage
+  failed_logins_threshold: 5
+  network_baseline_multiplier: 2.0
+  consecutive_readings: 3  # number of consecutive readings to trigger alert
+
+# Cloud Sync Settings
+cloud:
+  enabled: true
+  sync_interval: 30  # seconds between sync attempts
+  max_retries: 5  # maximum retry attempts for failed syncs
+  batch_size: 100  # number of records to send per batch
+  offline_queue_size: 1000  # maximum queue size for offline operations
+  retry_backoff_base: 2  # exponential backoff base
+  max_backoff_seconds: 3600  # maximum backoff time (1 hour)
+
+# Supabase Settings (will be populated from environment variables)
+supabase:
+  url: ""  # Will be loaded from SUPABASE_URL environment variable
+  service_key: ""  # Will be loaded from SUPABASE_SERVICE_KEY environment variable
+  realtime_enabled: false  # Enable real-time subscriptions (future feature)
+  rls_enabled: true  # Row Level Security enabled
+
+# Data Retention
+retention:
+  local_days: 7  # days to keep data in local SQLite database
+  export_days: 30  # days to keep exported data
+  max_local_size_mb: 1024  # maximum size of local database (1GB)
+
+# UI Settings
+ui:
+  theme: DarkGrey14  # PySimpleGUI theme
+  refresh_rate: 1000  # milliseconds between UI updates
+  graph_history_points: 100  # number of points to show in graphs
+  max_alerts_display: 50  # maximum alerts to show in UI
+  show_process_details: true  # show detailed process information
+
+# Logging Settings
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: vigil.log  # log file name
+  max_size_mb: 10  # maximum log file size
+  backup_count: 5  # number of backup log files to keep
+
+# Testing Settings (for development)
+testing:
+  mock_mode: false  # use mock data instead of real system calls
+  test_interval: 0.1  # faster intervals for testing
