@@ -1,0 +1,48 @@
+# ============================================================================
+# VIGIL - Cloud-Connected Security & Performance Dashboard
+# ============================================================================
+# Core Requirements for VIGIL System
+# Python 3.10+ compatible
+# ============================================================================
+
+# ============================================================================
+# CORE GUI & FRAMEWORK
+# ============================================================================
+PySimpleGUI~=4.60.0           # Desktop GUI dashboard interface
+PyYAML~=6.0                   # YAML configuration file parsing
+
+# ============================================================================
+# SYSTEM MONITORING
+# ============================================================================
+psutil~=5.9.0                 # System resource monitoring (CPU, RAM, disk, network)
+watchdog~=3.0.0               # File system monitoring for security events
+
+# ============================================================================
+# DATA PROCESSING & VISUALIZATION
+# ============================================================================
+pandas~=2.0.0                 # Data manipulation and CSV export
+matplotlib~=3.7.0             # Live updating graphs and visualizations
+
+# ============================================================================
+# CLOUD INTEGRATION - SUPABASE (Core cloud packages)
+# ============================================================================
+supabase-py~=1.0.0            # Supabase PostgreSQL client - main cloud integration
+aiohttp~=3.8.0                # Async HTTP requests for non-blocking cloud sync
+cryptography~=41.0.0          # Data encryption for sensitive information before cloud sync
+python-dotenv~=1.0.0          # Environment variable management for API keys
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+python-dateutil~=2.8.0        # Date/time utilities
+colorama~=0.4.0               # Cross-platform colored terminal text
+
+# ============================================================================
+# DEVELOPMENT & TESTING DEPENDENCIES
+# ============================================================================
+pytest~=7.4.0                 # Testing framework
+pytest-asyncio~=0.21.0        # Async test support
+black~=23.0.0                 # Code formatting
+pylint~=2.17.0                # Code linting
+mypy~=1.5.0                   # Static type checking
+pre-commit~=3.3.0             # Git hooks for code quality
