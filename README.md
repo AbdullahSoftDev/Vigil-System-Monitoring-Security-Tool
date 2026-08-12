@@ -1,3 +1,11 @@
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/AbdullahSoftDev/Pictures/main/VIGIL System Monitor.png"
+    alt="VIGIL — Cloud-Connected System Monitoring & Security Dashboard"
+    width="100%"
+  />
+</div>
+
 # 🛡️ VIGIL — Cloud-Connected System Monitoring & Security Dashboard
 
 <div align="center">
