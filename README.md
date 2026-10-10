@@ -12,6 +12,8 @@
 
 **A real-time desktop monitoring platform for system performance, security events, intelligent alerting, and cloud synchronization.**
 
+VIGIL is a Python-based system monitoring and security dashboard project focused on performance telemetry, security-event visibility, alerting workflows, and a Supabase-backed cloud integration.
+
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Cloud%20Backend-3ECF8E?style=for-the-badge\&logo=supabase\&logoColor=white)](https://supabase.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)](https://www.postgresql.org/)
